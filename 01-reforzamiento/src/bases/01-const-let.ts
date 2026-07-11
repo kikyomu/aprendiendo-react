@@ -7,5 +7,4 @@ diceNumber = 3; // This line will cause an error because diceNumber is declared 
 const containsLetterF = lastName.includes('F');
 
 console.log({ containsLetterF, diceNumber, firstName, lastName });
-
 console.log('firstName', firstName);

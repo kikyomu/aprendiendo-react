@@ -16,7 +16,7 @@ interface Person {
     // };
 
     // Una solucion más escalable es crear otra interface para la propiedad address
-    address: Address; 
+    address: Address;
 }
 
 interface Address {
@@ -37,11 +37,11 @@ const ironman: Person = {
 console.log(ironman);
 
 // operador "spread" para tomar las propiedades hijas directas de un objeto y copiarlas en otro objeto
-//const spiderman = { ...ironman }; // {...nombreObjeto} -> operador spread
+// const spiderman = { ...ironman }; // {...nombreObjeto} -> operador spread
 
-//Con structuredClone() se hace una copia profunda del objeto, incluyendo todas las propiedades anidadas.
+// Con structuredClone() se hace una copia profunda del objeto, incluyendo todas las propiedades anidadas.
 
-// const spiderman = structuredClone(ironman); 
+// const spiderman = structuredClone(ironman);
 // spiderman.firstName = 'Peter';
 // spiderman.lastName = 'Parker';
 // spiderman.age = 22;
