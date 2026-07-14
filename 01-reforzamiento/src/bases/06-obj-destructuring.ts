@@ -46,6 +46,7 @@ const { rank,
     user,
     // user: { name },
 } = useContex(person);
+// crear otra variable para extraer el name
 const { name } = user;
 
 console.log({ rank, keyName, name });
