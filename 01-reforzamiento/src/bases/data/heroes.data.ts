@@ -15,7 +15,7 @@ export interface Hero {
 // export type Owner = typeof Owner[keyof typeof Owner];
 
 // Para que sea compatible cambiar tsconfig.json por: "erasableSyntaxOnly": false
-enum Owner {
+export enum Owner {
     DC = 'DC', // 0 // 'DC'
     Marvel = 'Marvel', // 1 // 'Marvel'
 }

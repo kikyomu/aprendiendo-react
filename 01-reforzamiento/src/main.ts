@@ -9,6 +9,8 @@ import './style.css'
 // import './bases/07-array-destructuring'
 // import './bases/data/heroes.data'
 import './bases/08-imp-exp'
+import { getHeroesByOwner } from './bases/08-imp-exp';
+import { Owner } from './bases/data/heroes.data';
 
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
@@ -16,3 +18,5 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <h1>Hola mundo</h1>
 </section>
 `
+
+console.log(getHeroesByOwner(Owner.DC));
