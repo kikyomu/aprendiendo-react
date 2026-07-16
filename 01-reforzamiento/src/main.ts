@@ -8,9 +8,11 @@ import './style.css'
 // import './bases/06-obj-destructuring'
 // import './bases/07-array-destructuring'
 // import './bases/data/heroes.data'
-import './bases/08-imp-exp'
-import { getHeroesByOwner } from './bases/08-imp-exp';
-import { Owner } from './bases/data/heroes.data';
+// import './bases/08-imp-exp'
+// import { getHeroesByOwner } from './bases/08-imp-exp';
+// import { Owner } from './bases/data/heroes.data';
+import './bases/09-promises'
+
 
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
@@ -19,4 +21,4 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 </section>
 `
 
-console.log(getHeroesByOwner(Owner.DC));
+// console.log(getHeroesByOwner(Owner.DC));
