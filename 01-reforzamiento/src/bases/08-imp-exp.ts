@@ -12,7 +12,7 @@ const getHeroById = (id: number): Hero | undefined => {
     return hero;
 };
 
-// console.log(getHeroById(3));
+console.log(getHeroById(3));
 
 // TAREA
 // getHeroesByOwner => Hero[]
