@@ -1,0 +1,22 @@
+.item-row{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+.item-text{
+    width: 150px;
+}
+
+.redButton{
+ background-color: rgb(209, 38, 38);
+ color: #ffffff;
+ border: none;
+}
+
+.greenButton{
+ background-color: rgb(29, 197, 57);
+ color: #ffffff;
+ border: none;
+}
