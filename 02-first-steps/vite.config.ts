@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vitest/config'
 import react from '@vitejs/plugin-react-swc'
 
 // https://vite.dev/config/
@@ -9,5 +9,9 @@ export default defineConfig({
       usePolling: true,
       interval: 100, // Fuerza a revisar cambios cada 100 milisegundos
     },
+  },
+  test: {
+    environment: 'jsdom',
+    globals: true,
   },
 })
