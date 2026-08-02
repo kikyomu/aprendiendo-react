@@ -1,4 +1,4 @@
-import ItemCounter from "./shoping-cart/ItemCounter";
+import ItemCounter from "./shopping-cart/ItemCounter";
 interface ItemInCart {
   productName: string;
   quantity: number;
