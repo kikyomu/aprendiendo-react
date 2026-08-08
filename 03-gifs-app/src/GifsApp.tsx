@@ -10,7 +10,12 @@ export const GifsApp = () => {
     const [previousTerm, setPreviousTerms] = useState(['dragon ball z']);
     const handleTermClicked = (term: string) => {
         console.log({ term });
-    }
+    };
+
+    const handleSearch = (query: string) => {
+        console.log({ query });
+
+    };
 
 
     return (
@@ -21,7 +26,10 @@ export const GifsApp = () => {
                 description="Descubre y comparte el gif perfecto" />
 
             {/* Search */}
-            <SearchBar placeholder="Busca lo que quieras" butonText="Buscar" />
+            <SearchBar 
+                placeholder="Busca lo que quieras" 
+                onQuery={handleSearch} 
+            />
 
             {/* Búsquedas previas */}
             <PreviousSearches
