@@ -7,16 +7,23 @@ import { useState } from "react"
 
 export const GifsApp = () => {
 
-    const [previousTerm, setPreviousTerms] = useState(['dragon ball z']);
+    const [previousTerms, setPreviousTerms] = useState(['dragon ball z']);
     const handleTermClicked = (term: string) => {
         console.log({ term });
     };
 
-    const handleSearch = (query: string) => {
-        console.log({ query });
+    const handleSearch = (query: string = '') => {
+// Tarea:Implementar la función handleSearch que debe:
+// Convertir el query a minúsculas y eliminar espacios en blanco
+    query = query.trim().toLowerCase();
+// Validar que el query no esté vacío
+    if (query.length === 0) return;
 
+// Evitar búsquedas duplicadas verificando si el término ya existe en previousTerms ( si existe, no hacer nada )
+    if (previousTerms.includes(query)) return;
+// Actualizar previousTerms agregando el nuevo término al inicio y limitando a 8 elementos máximo, es decir no puede ser un arreglo de más de 8.
+    setPreviousTerms([query, ...previousTerms].splice(0, 8));
     };
-
 
     return (
         <>
@@ -34,7 +41,7 @@ export const GifsApp = () => {
             {/* Búsquedas previas */}
             <PreviousSearches
                 subtitle="Búsquedas previas"
-                searches={previousTerm}
+                searches={previousTerms}
                 onLabelClicked={handleTermClicked}
             />
 
